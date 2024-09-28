@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    text-decoration: none;
+    box-sizing:border-box;
+}
+:root{
+    --preto: rgb(11, 6, 20);
+    --font-color2: gray;
+    --branco: rgb(211, 211, 211);
+    --corbase: rgb(25, 14, 44);
+}
+header{
+display: flex;
+justify-content: space-between;
+padding-left: 20px;
+padding-right: 20px;
+align-items: center;
+background-color: var(--preto);
+}
+header h1{
+    color: var(--);
+    margin-bottom: 50%;
+    display: flex;
+    justify-content: left;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+header a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    text-transform: capitalize;
+    width: 100px;
+    height: 30px;
+    transition: 0.5s;
+}
+header a:hover{
+    color: gray;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+footer{
+    background-color: var(--corbase);
+    color: aliceblue;
+}
+#direitos{
+    display:flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.redes{
+    display:flex;
+    justify-content: right;
+    padding: 10px;
+}
+#logoinsta{
+    width:32px;
+    height:100%;
+}
+#titulo{
+    font-family:"Caesar Dressing", system-ui;
+    color: var(--branco);
+    margin-bottom: 50%;
+    display: flex;
+    justify-content: left;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+#direitos{
+    color: var(--branco);
+}
+iframe{
+    display:flex;
+    width: 100%;
+}
