@@ -1,0 +1,173 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --marrom: rgb(25, 14, 44);
+    --branco: rgb(233, 241, 236);
+    --bege: rgb(217, 217, 217);
+    --hover: rgb(150, 132, 189);
+    --marromescuro: rgb(150, 132, 189);
+    --fonte: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--marrom);
+}
+body{
+    background-color: var(--bege);
+}
+#borda{
+    background-color: black;
+    width: 40px;
+}
+#galeriadorock{
+    font-family: "Caesar Dressing";
+    color: var(--bege);
+    font-size: 300%;
+    display:flex;
+    padding-right: 800px;
+    padding-top: 50px;
+}
+#quemsomos{
+    background-color: var(--bege);
+    height: 30px;
+    width: 300px;
+    margin-top: 120px;
+    transition: 0.75s;
+}
+#quemsomos:hover{
+    color: var(--hover);
+    background-color: var(--marromescuro);
+    cursor: pointer;
+}
+
+.apresentacao{
+    margin: 50px;
+    margin-bottom: -30px; 
+}
+#galeria{
+    display:Flex;
+    justify-content: center;
+    width: 1500px;
+    height: 500px;
+}
+#textapresentacao{
+    display:flex;
+    text-align: center;
+    margin: 10px;
+    width: 100%;
+    color: rgb(14, 8, 8);
+    font-size: 150%;
+}
+#fundoraparigos{
+    background-color: var(--marromescuro);
+}
+.quemsomostext{
+    display:flex;
+    justify-content: center;
+    padding: 100px;
+
+}
+#textoquemsomos{
+    width: 500px;
+    padding: 30px;
+    background-color: var(--marrom);
+    color: var(--fonte); 
+}
+#logoraparigos{
+    width:320px;
+    height: 300px;
+    padding-top: 50px;
+}
+.cards{
+    display:flex;
+    justify-content: space-around;
+    margin: 10px;
+    margin-top: 150px;
+    font-size: 150%;
+}
+.imagemcard{
+    height: 450px;
+}
+#mapa{
+    background-color: var(--marrom);
+    padding: 10px;
+    transition: 0.75s;
+}
+#mapa:hover{
+    padding: 15px;
+    background-color: var(--hover);
+    cursor: pointer;
+}
+#loja{
+    background-color: var(--marrom);
+    padding: 10px;
+    transition: 0.75s;
+}
+#loja:hover{
+    padding: 15px;
+    background-color: var(--hover);
+    cursor: pointer;
+}
+#historia{
+    background-color: var(--marrom);
+    padding: 10px;
+    transition: 0.75s;
+}
+#historia:hover{
+    background-color: var(--hover);
+    padding: 15px;
+    cursor: pointer;
+}
+footer{
+    background-color: var(--marrom);
+    color: aliceblue;
+}
+#direitos{
+    display:flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.redes{
+    display:flex;
+    justify-content: right;
+    padding: 10px;
+}
+#logoinsta{
+    width:32px;
+    height:100%;
+}
+
+@media (max-width:768px){
+    body{
+        width: 100%; /*largura da página 100%*/
+    }
+    header,section{
+        padding-left:3%;
+        padding-right:3%;
+    }
+    header{
+        flex-direction:column;
+    }
+    .apresentacao{
+        flex-direction:column;
+    }
+    #galeria{
+        width: 100%;
+    }
+    .cards{
+        flex-direction:column;
+    }
+    .quemsomostext{
+        flex-direction:column;
+        width:100%;
+        padding:0px;
+    }
+    #textoquemsomos{
+        width:100%;
+        padding:0px;
+        font-size: 120%;
+    }
+}
