@@ -1,0 +1,128 @@
+:root{
+    --preto: rgb(25, 14, 44);
+    --font-color2: gray;
+    --branco: rgb(211, 211, 211);
+    --corbase:  rgb(25, 14, 44);
+    --hover: rgb(150, 132, 189);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    border:0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--branco);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    background-color: var(--preto);
+}
+header a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    text-transform: capitalize;
+    width: 100px;
+    height: 30px;
+    transition: 0.5s;
+}
+header a:hover{
+    color: black;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+#voltar:hover{
+    background-color:  var(--hover);
+}
+#textohist h2{
+    padding-left: 20px;
+    color: black;
+}
+#textohist p{
+    color: black;
+    justify-content: center;
+    font-size: 25px;
+    margin-top: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 35px;
+}
+
+#titulo{
+    font-family:"Caesar Dressing", system-ui;
+    color: var(--branco);
+    margin-bottom: 50%;
+    display: flex;
+    justify-content: left;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+footer{
+    background-color: var(--corbase);
+    color: aliceblue;
+}
+#direitos{
+    display:flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.redes{
+    display:flex;
+    justify-content: right;
+    padding: 10px;
+}
+#logoinsta{
+    width:32px;
+    height:100%;
+}
+#centro{
+    display: flex;
+    justify-content:center;
+}
+h2{
+    font-family:"Caesar Dressing", system-ui;
+}
+@media(max-width: 768px){
+    body{
+        width: 100%;
+    }
+    header{
+     width: 100%;
+     flex-direction: column;
+     justify-content: center;
+    }
+    header h1{
+     margin-left:0;
+     margin-bottom: 15px;
+     font-size: 16px;    
+    }
+    header a{
+    margin-bottom: 30px;
+    padding: 0;
+    margin: 0;
+    }
+    #textohist{
+        justify-content: center;
+        margin-top: 30px;
+    }
+    #textohist h2{
+      margin-bottom: 20px;
+      text-align: center;
+      margin-left: 0;
+    }
+    #textohist p{
+        margin-bottom: 20px;
+    }
+}
