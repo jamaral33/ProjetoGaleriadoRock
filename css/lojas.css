@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    text-decoration: none;
+    box-sizing:border-box;
+}
+:root{
+    --marrom: rgb(25, 14, 44);
+    --branco: rgb(233, 241, 236);
+    --bege: rgb(217, 217, 217);
+    --hover: rgb(150, 132, 189);
+    --marromescuro: rgb(150, 132, 189);
+    --fonte: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    background-color: var(--marrom);
+}
+#titulo{
+    font-family:"Caesar Dressing", system-ui;
+    color: var(--branco);
+    margin-bottom: 50%;
+    display: flex;
+    justify-content: left;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+header a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    text-transform: capitalize;
+    width: 100px;
+    height: 30px;
+    transition: 0.5s;
+}
+header a:hover{
+    color: black;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+#name{
+    color: var(--branco);
+}
+#voltar:hover{
+    background-color:  var(--hover);
+}
+body{
+    background-color: var(--bege);
+}
+main {
+    width: 100%; 
+  }
+.slideh1{
+    justify-content: center;
+}
+#slide{
+    margin-top: 150px;
+    width:800px;
+    height:800px;
+    margin-left: 20%;
+  } 
+  .slider li {
+       list-style: none;
+       position: absolute;
+   }
+   .slider img {
+       margin: auto;
+       height: 400px;
+       width: 650px;
+       vertical-align: top;
+   } 
+   .slider input {
+      display: none;   
+  }
+   .slider {
+       display: block;
+       height: 300px;
+       width: 600px;
+       margin: auto;
+       margin-top: 20px;
+       position: flex;   
+   }
+   .slider label {
+       background-color: #FFFFFF;
+       bottom: 10px;
+       cursor: pointer;
+       display: block;
+       height: 20px;
+       width: 20px;
+       position: absolute;   
+       z-index: 10;
+       border-radius: 100%;
+   }
+    .slider img {
+       opacity: 0;
+       visibility: hidden;
+   }
+   .slider li input:checked ~ img {
+       opacity: 1;
+       visibility: visible;
+       z-index: 10; } 
+   .slider li:nth-child(1) label {
+       left: 10px;
+   }
+   .slider li:nth-child(2) label {
+       left: 40px;
+   }
+   .slider li:nth-child(3) label {
+       left: 70px;
+   } 
+   .slider li:nth-child(4) label {
+       left: 100px;
+   } 
+footer{
+        justify-content: center;
+        display: flex;
+        padding-top: 250px;
+}
+#direitos{
+    display:flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.redes{
+    display:flex;
+    justify-content: right;
+    padding-left: 10px;
+}
+#logoinsta{
+    width:32px;
+    height:100%;
+}
+#titulo{
+    font-family:"Caesar Dressing", system-ui;
+    color: var(--branco);
+    margin-bottom: 50%;
+    display: flex;
+    justify-content: left;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+#direitos{
+    color: var(--branco);
+}
+@media(max-width: 768px){
+    body{
+        width: 100%;
+    }
+    header{
+     width: 100%;
+     flex-direction: column;
+     justify-content: center;
+    }
+    header h1{
+     margin-left:0;
+     margin-bottom: 15px;
+     font-size: 16px;    
+    }
+    .slider{
+        width: 100%;
+    }
+    .slider li img{
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        height: 300px;
+    }
+}
